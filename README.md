@@ -18,114 +18,33 @@ In this project, let's build a **Fruits Counter** by applying the concepts we ha
 
 </details>
 
-### Set Up Instructions
+# Fruits Counter
 
-<details>
-<summary>Click to view</summary>
+An interactive, responsive React application built to track fruit consumption. This project focuses on applying core React fundamentals including class components, state initialization, state merging using updates based on previous state, and event handling.
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+## 🚀 Features
 
-### Completion Instructions
+- **Independent State Management:** Dynamically tracks separate counters for both mangoes and bananas.
+- **State Merging:** Leverages functional `this.setState` to ensure accurate updates based on the previous state without overriding unaffected keys.
+- **Responsive Design:** Seamless transition from mobile-first single-column styling to multi-column desktop layouts.
+- **Polished UI:** Uses precise hex colors, clean typography (`Roboto`), and subtle box shadows to create a modern user interface.
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+---
 
-The app must have the following functionalities
+## 🛠️ Tech Stack
 
-- Initially, the count of the eaten mangoes and bananas should be 0
-- When **Eat Mango** is clicked the count of the mangoes eaten should be incremented by 1
-- When **Eat Banana** is clicked the count of the bananas eaten should be incremented by 1
+- **Frontend:** React.js (Class Components)
+- **Styling:** CSS3 (Flexbox, Media Queries)
+- **Tooling:** CCBP CLI tools for automated testing and submission
 
-</details>
+---
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+## 📁 Directory Structure
 
-Use these files to complete the implementation:
-
-- `src/components/FruitsCounter/index.js`
-- `src/components/FruitsCounter/index.css`
-</details>
-
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- **State updates are merged**. It means that when you update only one key-value pair in the `state` object, it will not affect the other key-value pairs in the state object.
-
-  For example let's say your state is as followed:
-
-  ```
-  state = { key1 : value1, key2 : value2 }
-  ```
-
-  If you use this.setState such as :
-
-  ```
-  this.setState(prevState => ({key1: prevState + valueN}))
-  ```
-
-  Your new state will be :
-
-  ```
-  state = { key1 : value3, key2 : value2 }
-  ```
-
-- You can use the below cursor CSS property for buttons to set the type of mouse cursor, to show when the mouse pointer is over an element,
-
-  ```
-    cursor: pointer;
-  ```
-
-  <br/>
-   <img src="https://assets.ccbp.in/frontend/content/react-js/cursor-pointer-img.png" alt="cursor pointer" style="width:100px" />
-
-- You can use the below outline CSS property for buttons and input elements to remove the highlighting when the elements are clicked,
-
-  ```
-    outline: none;
-  ```
-
-</details>
-
-### Resources
-
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/react-js/mango-img.png](https://assets.ccbp.in/frontend/react-js/mango-img.png) alt should be **mango**
-- [https://assets.ccbp.in/frontend/react-js/banana-img.png](https://assets.ccbp.in/frontend/react-js/banana-img.png) alt should be **banana**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #ffd569 ; width: 150px; padding: 10px; color: black">Hex: #ffd569</div>
-<div style="background-color: #ffffff ; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #000000 ; width: 150px; padding: 10px; color: white">Hex: #000000</div>
-<div style="background-color: #007bff ; width: 150px; padding: 10px; color: white">Hex: #007bff</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+The key implementation files for this project are located at:
+```text
+src/
+└── components/
+    └── FruitsCounter/
+        ├── index.js      # Component logic, state, and markup
+        └── index.css     # Responsive styles and component layoutscepts you’ve been learning? Take a look at the Cheat Sheets.
